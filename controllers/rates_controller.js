@@ -6,7 +6,7 @@ const currencyHelper = require("../helpers/currency_helper")
 
 module.exports.rateController = (req, res, next) => {
     const baseCode = req.query.base;
-    const currencies = req.query.currencies.split(",");
+    const currencies = req.query.currency.split(",");
 
     const returnObject = {
         rates: {
